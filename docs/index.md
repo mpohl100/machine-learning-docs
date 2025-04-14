@@ -16,7 +16,7 @@
 
 [LICENSE]: https://github.com/Andre601/mkdocs-template/blob/master/LICENSE
 
-[machine_learning_index]: https://github.com/mpohl100/machine_learning_intro.md
+[machine_learning_index]: https://github.com/mpohl100/machine-learning-docs/blob/master/docs/machine_learning_intro.md
 
 # MkDocs Material Template
 This is a template repository for anyone that wants to use the MkDocs Material Theme.
