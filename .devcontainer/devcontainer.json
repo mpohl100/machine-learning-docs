@@ -1,0 +1,18 @@
+{
+    "name": "Python 3.7 + MkDocs",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "bierner.markdown-preview-github-styles"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "forwardPorts": [],
+    "remoteUser": "vscode"
+  }
+  
