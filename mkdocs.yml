@@ -93,7 +93,7 @@ repo_url: https://github.com/mpohl100/machine-learning-docs
 # +--------------------------------------------------------------------------------------------------------+
 nav:
   - Welcome: index.md
-  - Machine Learning Index: machine_learning_index.md
+  - Machine Learning Index: machine_learning_intro.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
