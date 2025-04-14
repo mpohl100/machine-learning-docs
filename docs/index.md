@@ -91,4 +91,4 @@ Read the [LICENSE] file for more info.
 
 ## First link
 
-Machine learning intro [Machine Learning Index](machine_learning_index.md)
+Machine learning intro [Machine Learning Index](machine_learning_intro.md)
