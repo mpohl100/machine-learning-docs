@@ -93,4 +93,4 @@ Read the [LICENSE] file for more info.
 
 ## First link
 
-Machine learning intor [machine_learning_index.md]
+Machine learning intor [machine_learning_index]
