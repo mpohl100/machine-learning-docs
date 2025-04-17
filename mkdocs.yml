@@ -27,8 +27,8 @@
 # | - https://www.mkdocs.org/user-guide/configuration/#site_url                                            |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-site_name: MkDocs Template
-site_description: 'A template for future MkDocs wikis'
+site_name: Machine learning documentation
+site_description: 'A documentation for how I want to ease machine learning for everyone'
 site_author: 'mpohl100'
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -93,6 +93,7 @@ repo_url: https://github.com/mpohl100/machine-learning-docs
 # +--------------------------------------------------------------------------------------------------------+
 nav:
   - Welcome: index.md
+  - Neural Networks: neural_networks.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
