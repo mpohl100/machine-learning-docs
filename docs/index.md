@@ -14,3 +14,7 @@ The next step is to implement being able to pass a memory barrier to limit how m
 That is why this machine learning approach is targeted for students/ scientists. On a laptop one has a lot more disk space than memory. That way you can train much bigger models.
 After that the plan is to bring dense layers to the GPU so that you can leverage graphics cards.
 When that is finished I plan on increasing the list of layer types and activation functions because then I have settled on the architecture of the rust traits of layers and activation functions.
+
+## Neural Networks
+
+Check out the explanation about what [Neural Networks](neural_networks.md) are.
