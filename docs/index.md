@@ -17,4 +17,8 @@ When that is finished I plan on increasing the list of layer types and activatio
 
 ## Neural Networks
 
-Check out the explanation about what [Neural Networks](neural_networks.md) are.
+Check out the explanation what [Neural Networks](neural_networks.md) are.
+
+## Genetic algorithms to generate neural networks
+
+[Genetic algorithms](genetic_algorithms.md)
