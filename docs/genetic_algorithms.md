@@ -1,7 +1,7 @@
 ## Genetic algorithms and neural networks
 
-Genetic algorithms are an adaptation of the algorithm of life. A generation of phenotypes phases a certain challenge and the winners of the competition get to spread their genes to the next generation of phenotypes. With this optimization algorithm one tries to find the best phenotype for the challenge.
-In our case the challenge is to find the best prediction percentage of a neural network architecticture for a given list of samples and targets. That means that the phenotype is the architecture of a neural network and the challenge is to evaluate all samples with the phenotype and find out what percentage of predictions is correct. The more accurate the predictions of a neural network architecture are the more it shapes the next generation of neural network architectures.
+Genetic algorithms are an adaptation of the algorithm of life. A generation of phenotypes faces a certain challenge and the winners of the competition get to spread their genes to the next generation of phenotypes. With this optimization algorithm one tries to find the best phenotype for the challenge.
+In our case the challenge is to find the best prediction percentage of a neural network architecture for a given list of samples and targets. That means that the phenotype is the architecture of a neural network and the challenge is to evaluate all samples with this architecture and to find out what percentage of predictions is correct. The more accurate the predictions of a neural network architecture are the more it shapes the next generation of neural network architectures.
 
 ## How the neural network architecture can be altered
 
