@@ -94,6 +94,7 @@ repo_url: https://github.com/mpohl100/machine-learning-docs
 nav:
   - Welcome: index.md
   - Neural Networks: neural_networks.md
+  - Genetic Algorithms: genetic_algorithms.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
