@@ -46,3 +46,14 @@ Then only the wrongly predicted samples are passed as training parameters to the
 That means with each level of retry you add the training samples become less in numbers.
 The theory is that the toughest to classify samples get rejected by all levels and reach the last level of retries.
 The hope is to improve the accuracy of a neural network architecture in general. With just one level it should be worse than with some retry levels.
+
+### Branching neural network 
+
+#### What it is
+A retry neural network is capable of looping, now the missing feature is branching.
+This can be implemented by introducing not one but N internal dimensions to the primary neural network.
+Then one can extract the internal dimensions from the evaluation of a sample in the primary neural network and run a softmax activation layer with temperature 1.0 on it. This method is guaranteed to pick 1 out of the N dimensions.
+Now the branching neural networks needs to have N other neural networks as member and the sample can be forwarded to the ith neural network. This ith neural network may again be a branching neural network or a classic neural network or a retry neural network.
+
+### How to compose different neural network types
+The idea is to provide a turing.yaml file which configures the branching and looping logic of the desired architecture. It is also planned to let the nn_generator use [genetic algorithms](genetic_algorithms.md) to try out different turing configurations.
