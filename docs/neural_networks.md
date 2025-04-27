@@ -26,3 +26,21 @@ For this the technique known as linear regression is used. Basically one can com
 ### How training is organized
 Above the calculation and the training of one dense layer is described.
 The training of a neural network now takes for example 100 epochs and over time the difference between the actual outputs and the target outputs is minimized. The loss of each epoch is a measure of how much the weights and biases of the neural network have changed. Over time the loss should become smaller.
+
+## Other Types of Neural Networks
+The basic idea of introducing new types of Neural Networks is to make them turing complete.
+
+### Retry Neural Network
+
+#### What it is
+A retry neural network receives an internal dimension in the layers 1..N with N the total number of layers.
+If after evaluating the primary network the internal dimension is close to zero the secondary neural network which is the same architecture as the primary neural network minus the internal dimensions is invoked and the evaluation of the secondary is returned as the result.
+Now it is possible that the secondary network is again a retry network and therefore the touring condition that one can loop is fullfilled. Obviously it is tough to loop forever as one would run out of diskspace to save the neural networks. Looping forever is anyways not a practical application of a neural network as one wants to compute a result in an acceptable amount of time.
+However the gist of retry neural networks is that they are basically able to dismiss their first result and can invoke a secondary network where its confidence to be right is higher.
+
+#### How to train a retry network
+First one trains the primary neural network. Then all the training samples are tested with this neural network.
+The correct predictions receive a one as last internal dimension which stands for "do not continue". The wrong predictions receive a zero which stands for "continue". After that the primary network is reshaped to contain the internal dimensions. Now everything needs to be retrained. The theory is that the 0..N-1 dimension end up being the same as before and the network learns with the internal dimension whether to continue or not.
+Then only the wrongly predicted samples are passed as training parameters to the secondary neural network.
+That means with each level of retry you add the training samples become less in numbers.
+The theory is that the toughest to classify samples get rejected by all levels above and reahc the last level of retries.
